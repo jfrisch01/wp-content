@@ -1,0 +1,202 @@
+/*
+Theme Name: Express Wicker
+Theme URI: https://github.com/
+Description: A theme for patio furniture
+Author: Jonathan Frisch
+Author URI: http://expresswicker.com
+Version: 1.0
+License: GPLv2 
+License URI: license.txt
+Tags:gray, two-columns
+------------------------------
+	Table of Contents
+------------------------------
+==Basic Links
+==Layout blocks
+==Navigation Top Bar
+==Search Bar (top)
+==utilities (top) 
+==Breadcrumbs
+==pagination
+==Search Form
+==comment form
+==comments list
+==sidebar and widget typography and layout
+==post typography 
+==blockquotes 
+==Gallery
+==Forms
+==tables
+==Lists
+==misc tags
+==Calendar Widget
+==custom post type - products 
+==Products Widget  
+==Contact info options box
+==Media Queries
+*/
+body{
+	background-color: #FFF;
+	color:#000;
+}
+a{
+	color:#679EA5;
+}
+/* 
+==Basic Links
+*/
+a {
+	text-decoration:none;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+a:hover,
+a:focus {
+	color:#dd6259;
+}
+
+body {
+	font-size:100%;
+	line-height:1.125em; /* 16×1.125=18 */
+	font-family: 'Source Sans Pro', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+}
+
+#wrapper{
+	background-color: grey;
+	margin:2% auto;
+	padding:0 2%;
+	max-width:70em;
+}
+
+header[role=banner]{
+	position:relative;
+	padding-top:122px;
+}
+header.top-bar {
+	font-size: 1.2em;
+	margin-bottom:4%;
+}
+h1.site-name{
+	text-align: center;	
+	background-color:#696763;
+	white-space: nowrap;
+	font-size:1em;	
+}
+h1.site-name a{
+	display: block;
+	width:100%;
+	min-height:80px;
+	height: 100%;
+	line-height:80px;
+	font-size:1.8em;
+	font-weight: 200;
+	color: #ededed;
+}
+h2.site-description{
+	display:none;
+}
+header.top-bar nav{
+	margin:0;
+	padding:0;
+	background-color: rgba(0,0,0,.2);
+}
+header nav ul li {
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;	
+	position:relative;
+	list-style-type:none;
+}
+header nav ul a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding: 0 20px;
+	text-decoration:none;
+	color:#D1D1D1;
+	line-height:79px;
+}
+header nav ul li > .sub-menu,
+header nav ul li > .children {
+	max-height:0 ;
+	opacity:0;
+	overflow:hidden;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+	position:absolute;
+	top:3.9em;
+	left:0;
+	text-align: left;
+	background-color:black;
+	background-color:rgba(0,0,0, .8);
+	min-width:250px;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
+	box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
+	z-index:99999;
+}
+header nav ul li.current-menu-item{
+	background-color:rgba(0,0,0,.15);
+}
+header nav ul li:hover{
+	background-color:black;
+	background-color:rgba(0,0,0, .6);
+}
+header nav ul li:hover .sub-menu,
+header nav ul li:hover .children {
+	max-height:400px;
+	opacity:1;
+}
+header nav ul li .sub-menu li,
+header nav ul li .children li  {
+	display:block;
+	float:none;
+	height:auto;
+	line-height: 2em;
+}
+header nav ul li .sub-menu li a
+header nav ul li .children li a  {
+	padding:10px 25px;
+}
+/*
+==Search Bar (top)
+*/
+header[role=banner] .search-form,
+header[role=banner] .searchform
+{
+	position: absolute;
+	top:3em;
+	right:0;
+	width: 30%;
+	min-width:300px;
+}
+
+
+
+
+/* Text meant only for screen readers */
+.says,
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+
+
+
+
+
