@@ -65,19 +65,17 @@ body {
 }
 
 #wrapper{
-	background-color: grey;
-	margin:2% auto;
-	padding:0 2%;
+	background-color: white;
+	margin:0 auto;
 	max-width:70em;
 }
 
 header[role=banner]{
 	position:relative;
-	padding-top:122px;
+	padding-top:0px;
 }
-header.top-bar {
-	font-size: 1.2em;
-	margin-bottom:4%;
+header  {
+	border-top: solid 19px #0c5f63;
 }
 h1.site-name{
 	text-align: center;	
@@ -85,19 +83,22 @@ h1.site-name{
 	white-space: nowrap;
 	font-size:1em;	
 }
-h1.site-name a{
-	display: block;
-	width:100%;
-	min-height:80px;
-	height: 100%;
-	line-height:80px;
-	font-size:1.8em;
-	font-weight: 200;
-	color: #ededed;
-}
+
 h2.site-description{
 	display:none;
 }
+
+header .logo{
+	float: left;
+}
+
+header .ban{
+	float: right;
+}
+#content{
+	clear: both;
+}
+
 header.top-bar nav{
 	margin:0;
 	padding:0;
@@ -200,3 +201,7 @@ header[role=banner] .searchform
 
 
 
+footer{
+	border-bottom: solid 47px #0c5f63
+	;
+}
