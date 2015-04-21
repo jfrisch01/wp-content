@@ -55,7 +55,7 @@ a {
 }
 a:hover,
 a:focus {
-	color:#dd6259;
+	color:#0cccd4;
 }
 
 body {
@@ -90,21 +90,32 @@ h2.site-description{
 
 header .logo{
 	float: left;
+	max-height: 113px;
 }
 
 header .ban{
 	float: right;
+	margin: 0;
+	max-height: 113px;
 }
 #content{
 	clear: both;
 }
 
 header.top-bar nav{
-	margin:0;
+	margin:0 auto;
 	padding:0;
-	background-color: rgba(0,0,0,.2);
+
+}
+header nav ul {
+	margin:0 auto;
+	text-align: center;
+	background-color: #0c5f63;
+	clear: both;
 }
 header nav ul li {
+	font: adobe garamond pro;
+	font-size: 1.2em;
 	display:inline-block;
 	zoom:1;
 	*display:inline;
@@ -117,13 +128,15 @@ header nav ul li {
 	list-style-type:none;
 }
 header nav ul a {
+	margin: 0 auto;
 	display: block;
 	position: relative;
 	overflow: hidden;
-	padding: 0 20px;
+	padding: 0 55px;
 	text-decoration:none;
-	color:#D1D1D1;
-	line-height:79px;
+	color: white;
+	line-height:39px;
+	background-color: #0c5f63;
 }
 header nav ul li > .sub-menu,
 header nav ul li > .children {
@@ -138,8 +151,7 @@ header nav ul li > .children {
 	position:absolute;
 	top:3.9em;
 	left:0;
-	text-align: left;
-	background-color:black;
+	text-align: center;
 	background-color:rgba(0,0,0, .8);
 	min-width:250px;
 	-webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
@@ -151,7 +163,7 @@ header nav ul li.current-menu-item{
 	background-color:rgba(0,0,0,.15);
 }
 header nav ul li:hover{
-	background-color:black;
+	background-color:blue;
 	background-color:rgba(0,0,0, .6);
 }
 header nav ul li:hover .sub-menu,
@@ -202,6 +214,80 @@ header[role=banner] .searchform
 
 
 footer{
-	border-bottom: solid 47px #0c5f63
-	;
+	
+}
+footer nav ul {
+	margin:0 auto;
+	text-align: center;
+	background-color: #0c5f63;
+	clear: both;
+}
+footer nav ul li {
+	font: adobe garamond pro;
+	font-size: 1.2em;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-ms-transition: all 100ms ease-out;
+	-o-transition: all 100ms ease-out;
+	transition: all 100ms ease-out;	
+	position:relative;
+	list-style-type:none;
+}
+footer nav ul a {
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding: 0 55px;
+	text-decoration:none;
+	color: white;
+	line-height:39px;
+	background-color: #0c5f63;
+}
+footer nav ul li > .sub-menu,
+footer nav ul li > .children {
+	max-height:0 ;
+	opacity:0;
+	overflow:hidden;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+	position:absolute;
+	top:3.9em;
+	left:0;
+	text-align: center;
+	background-color:rgba(0,0,0, .8);
+	min-width:250px;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
+	box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, .2);
+	z-index:99999;
+}
+footer nav ul li.current-menu-item{
+	background-color:rgba(0,0,0,.15);
+}
+footer nav ul li:hover{
+	background-color:blue;
+	background-color:rgba(0,0,0, .6);
+}
+footer nav ul li:hover .sub-menu,
+footer nav ul li:hover .children {
+	max-height:400px;
+	opacity:1;
+}
+footer nav ul li .sub-menu li,
+footer nav ul li .children li  {
+	display:block;
+	float:none;
+	height:auto;
+	line-height: 2em;
+}
+footer nav ul li .sub-menu li a
+footer nav ul li .children li a  {
+	padding:10px 25px;
 }

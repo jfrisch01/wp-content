@@ -14,14 +14,7 @@
 				) ); ?>           
 			</ul>
 		</section>
-		<section id="archives" class="widget">
-			<h3 class="widget-title"> Archives </h3>
-			<ul>
-				<?php wp_get_archives(array(
-					'type' => 'yearly',
-				)); ?>
-			</ul>
-		</section>
+
 		<section id="tags" class="widget">
 			<h3 class="widget-title"> Tags </h3>
 			<div class="tag_cloud">

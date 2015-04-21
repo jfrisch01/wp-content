@@ -24,8 +24,8 @@
 		
 		<div class="top-bar">
 			<div class="logo">
-				<a href="index.php">
-    				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg" alt="Express Wicker" width="294" height="114">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"> 
+    				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg" alt="Express Wicker" width="294" height="113">
   				</a>
 				<h1 class="site-name">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>" rel="home"> 
@@ -36,12 +36,18 @@
 			</div>	
 
 			<div class="ban">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bannerimg.jpg" alt="Express Wicker" width="726" height="114">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bannerimg.jpg" alt="Express Wicker" width="726" height="113">
 			</div>
-			
-			
+	
+			<?php wp_nav_menu( array(
+				'theme_location' => 'main_nav', //registered in functions.php
+				'container'	=> 'nav',			//wrap the list with a nav tag
+				'menu_class'	=> 'nav',			//ul class="nav"
+				'fallback_cb'	=> '',			//no fallback if no menu assigned
 
-		</div><!-- end .top-bar -->
+				) ); ?>
+			</div><!-- end .top-bar -->	
+		
 		
 		<?php wp_nav_menu( array(
 				'theme_location' => 'utilities', //registered in functions.php
