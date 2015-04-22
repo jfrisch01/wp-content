@@ -37,7 +37,7 @@
 
 	<?php endif;  //end THE LOOP ?>
 
-	<?php awesome_show_products( 6 ); //defined in functions.php ?>
+
 
 
 
