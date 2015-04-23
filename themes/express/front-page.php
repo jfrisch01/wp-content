@@ -16,12 +16,9 @@
 			the_post_thumbnail( 'big-banner' );  
 		endif;
 		?>
-
 			<h2 class="home-quote"> 
 				
 			</h2>
-
-			
 
 			<div class="entry-content">
 				<?php the_content();	?>

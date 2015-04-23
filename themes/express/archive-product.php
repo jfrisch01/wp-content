@@ -6,33 +6,17 @@
 		<?php while( have_posts() ): the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+		
 
-			
-
+			<a href="<?php the_permalink(); ?>">
 			<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'thumb clearfix')); //show the featured image ?>
+			</a>
 
 			<h2 class="entry-title"> 
 				<a href="<?php the_permalink(); ?>"> 
 					<?php the_title(); ?> 
 				</a>
-			</h2>
-
-			<div class="entry-content">
-				<?php 
-				if ( is_singular() ):
-					 the_content();
-				else:
-					the_excerpt();
-				endif;
-				?> 
-				<?php //get the price custom field
-				$price = get_post_meta( $post->ID, 'price', true ); 
-				//check to make sure there is a price to show
-				if( $price ):
-				?>
-				<span class="product-price"><?php echo $price; ?></span>
-			<?php endif; //price ?>
-			</div>
+			</h2>		
 						
 		</article><!-- end post -->
 

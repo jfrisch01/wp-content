@@ -61,4 +61,4 @@
 		  <?php // get_search_form(); //includes searchform.php if it exists, if not, this outputs the default search bar ?>	 
 	</header>
 
-	<img src="<?php header_image(); ?>">
+	
