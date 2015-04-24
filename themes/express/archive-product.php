@@ -28,7 +28,7 @@
 		if(function_exists('wp_pagenavi') && !wp_is_mobile()):
 			wp_pagenavi();
 		else:
-		previous_posts_link('&larr; Newer Posts ¯\_(ツ)_/¯');
+		previous_posts_link('&larr; Newer Posts');
 		next_posts_link('Older Posts &rarr;');
 		endif;
 		?>

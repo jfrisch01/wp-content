@@ -27,7 +27,7 @@ get_header()
 
 				<?php the_meta(); /* list of ALL custom fields */ ?>
 
-				<?php the_terms( $post->ID, 'feature', '<br />Features: ', ', ', '' ); ?>
+				
 
 				<?php the_content(); ?>
 			</div>
