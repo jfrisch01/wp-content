@@ -100,6 +100,7 @@ header .ban{
 }
 #content{
 	clear: both;
+	margin: 0 auto;
 }
 
 header.top-bar nav{
@@ -196,6 +197,16 @@ header[role=banner] .searchform
 }
 
 
+.single-content{
+	float: right;
+	max-width: 60%;
+	padding: 30px 60px 10px 10px; 
+}
+
+
+
+
+
 
 
 /* Text meant only for screen readers */
@@ -264,12 +275,12 @@ header[role=banner] .searchform
 	margin: 10px 0;
 }
 .hentry img {	
-	padding:6px;
-	margin:0 0 1em 0;
-	background-color:rgba(0,0,0,.1);
+	padding:4px;
+	margin:0 0 .5em 1em;
+	background-color:rgba(0,0,0,.2);
 }
 .hentry div, .hentry p{
-	max-width:100%;
+
 }
 .hentry .thumb {
 	float:left;
@@ -293,6 +304,20 @@ header[role=banner] .searchform
 }
 h2.entry-title{
 	max-width: 80%;
+}
+h2.entry-title2{
+	font-size: 1.5em;
+	font-weight: bold;
+	max-width: 95%;
+}
+
+.entry-content p{
+	text-align: center;
+	margin: 0 auto;
+
+}
+article post{
+	margin: 0 auto;
 }
 
 

@@ -22,6 +22,7 @@
 
 			<div class="entry-content">
 				<?php the_content();	?>
+				<p>Express Wicker</p>
 			</div>
 			
 		</article><!-- end post -->
