@@ -106,8 +106,22 @@ header .ban{
 header.top-bar nav{
 	margin:0 auto;
 	padding:0;
+}
+#menu-main-nav{
+	padding: 0; 
+}
+#menu-main-nav-1{
+	padding: 0; 
+}
+div.gallery{
+	width:95%;
+	margin: 0 auto;
 
 }
+
+
+
+
 header nav ul {
 	margin:0 auto;
 	text-align: center;
@@ -275,9 +289,9 @@ header[role=banner] .searchform
 	margin: 10px 0;
 }
 .hentry img {	
-	padding:4px;
+	padding:2px;
 	margin:0 0 .5em 1em;
-	background-color:rgba(0,0,0,.2);
+	background-color:#0c5f63;
 }
 .hentry div, .hentry p{
 
@@ -513,7 +527,7 @@ a img.aligncenter {
 
 
 footer{
-	
+
 }
 footer nav ul {
 	margin:0 auto;

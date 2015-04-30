@@ -1,5 +1,7 @@
 <?php get_header(); //include header.php ?>
 
+<div class="gallery">
+
 <main id="content">
 	<?php //THE LOOP
 		if( have_posts() ): ?>
@@ -42,6 +44,8 @@
 	<?php endif;  //end THE LOOP ?>
 
 </main><!-- end #content -->
+
+</div>
 
 <?php get_sidebar('shop'); //include sidebar.php ?>
 <?php get_footer(); //include footer.php ?>
