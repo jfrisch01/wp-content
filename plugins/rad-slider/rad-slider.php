@@ -79,7 +79,7 @@ register_activation_hook(__FILE__, 'rad_slider_rewrite_flush');
 * Since ver 1.0
 */
 function rad_slider_image(){
-	add_image_size( 'rad-slider', 1120, 330, true );	
+	add_image_size( 'rad-slider', 480, 281, true );	
 }
 add_action('init', 'rad_slider_image');
 

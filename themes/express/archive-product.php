@@ -1,5 +1,6 @@
 <?php get_header(); //include header.php ?>
 
+<div class="wrapper">
 <div class="gallery">
 
 <main id="content">
@@ -45,6 +46,8 @@
 
 </main><!-- end #content -->
 
+</div>
+<div class="push"></div>
 </div>
 
 <?php get_sidebar('shop'); //include sidebar.php ?>

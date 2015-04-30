@@ -5,9 +5,10 @@
 	list-style: none;
 	overflow: hidden;
 	width: 100%;
-	padding: 0;
+	padding: 6% 0 0 0;
 	margin: 0 auto;
-	max-width:700px;
+	max-width:480px;
+	max-height: 281;
 	line-height: 0;
 	font-size:0;
 }
@@ -62,8 +63,8 @@
 
 #rad-slider .next{
 	position:absolute;		
-	top:80%;
-	right:15px;
+	top:75%;
+	right:-15px;
 	z-index:50;
 	text-indent:-99999em;
 	cursor:pointer;	
@@ -72,16 +73,16 @@
 	width:20px;
 	border-top:solid 15px transparent;
 	border-bottom:solid 15px transparent;
-	border-left:solid 20px rgba(255,255,255,.5);
+	border-left:solid 20px rgba(0,0,0,.1);
 }
 #rad-slider .next:hover{
 	right:12px;
 }
 #rad-slider .prev{
 	position:absolute;
-	height:10%;
-	top:80%;
-	left:15px;
+	height:5%;
+	top:75%;
+	left:-15px;
 	z-index:50;
 	text-indent:-99999em;
 	cursor:pointer;
@@ -90,7 +91,7 @@
 	width:20px;
 	border-top:solid 15px transparent;
 	border-bottom:solid 15px transparent;
-	border-right:solid 20px rgba(255,255,255,.5);		
+	border-right:solid 20px rgba(0,0,0,.1);		
 }
 #rad-slider .prev:hover{
 	left:12px;

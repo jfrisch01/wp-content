@@ -101,6 +101,8 @@ header .ban{
 #content{
 	clear: both;
 	margin: 0 auto;
+	padding-top: 2.8%;
+	padding-left: 2.5%;
 }
 
 header.top-bar nav{
@@ -118,7 +120,11 @@ div.gallery{
 	margin: 0 auto;
 
 }
-
+figure.gallery-item{
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
 
 
 
@@ -214,10 +220,8 @@ header[role=banner] .searchform
 .single-content{
 	float: right;
 	max-width: 60%;
-	padding: 30px 60px 10px 10px; 
+	padding: 5px 60px 10px 10px; 
 }
-
-
 
 
 
@@ -256,7 +260,7 @@ header[role=banner] .searchform
 	font-size:0.5em;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin:.5em 0 .25em 0;
+	margin:.2em 0 .25em 0;
 	color:#000;
 }
 .entry-title a {
@@ -324,9 +328,21 @@ h2.entry-title2{
 	font-weight: bold;
 	max-width: 95%;
 }
-
+.entry-content-home{
+	padding-top: 5%;
+	margin: 0 auto;
+	max-width: 490px;
+}
+.entry-content-home p{
+	font: sans-serif;
+	text-align: left;
+	font-size: 1.1em;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 1.1;
+}
 .entry-content p{
-	text-align: center;
+	text-align: left;
 	margin: 0 auto;
 
 }
@@ -527,7 +543,12 @@ a img.aligncenter {
 
 
 footer{
-
+   position:fixed;
+   left:5%;
+   bottom:0px;
+   height:39px;
+   width:90%;
+   background:#999;
 }
 footer nav ul {
 	margin:0 auto;
@@ -603,4 +624,28 @@ footer nav ul li .children li  {
 footer nav ul li .sub-menu li a
 footer nav ul li .children li a  {
 	padding:10px 25px;
+}
+
+
+
+
+
+
+
+
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -39px;
+}
+.footer, .push {
+height: 40px;
+clear: both;
 }
